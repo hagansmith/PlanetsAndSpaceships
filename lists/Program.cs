@@ -10,8 +10,8 @@ namespace lists
     {
         static void Main(string[] args)
         {
-            List<string> planetList = new List<string>() { "Mercury", "Mars" };
-            List<string> additionalPlanetList = new List<string>() { "Saturn", "Jupiter" };
+            var planetList = new List<string>() { "Mercury", "Mars" };
+            var additionalPlanetList = new List<string>() { "Saturn", "Jupiter" };
             planetList.AddRange(additionalPlanetList);
             planetList.Insert(1, "Venus");
             planetList.Insert(2, "Earth");
@@ -45,6 +45,33 @@ namespace lists
             foreach (string rockyPlanet in rockyPlanets)
             {
                 Console.WriteLine(rockyPlanet);
+            }
+
+            var marsCraftList = new List<string>() {"craft1", "craft2", "craft3", "craft4" };
+            var earthCraftList = new List<string>() { "craft5", "craft6", "craft7" };
+
+            var spacecraftDictionary = new Dictionary<string, List<string>>
+            {
+                {"Mars", marsCraftList },
+                {"Earth", earthCraftList }
+            };
+
+            
+
+            foreach (string planet in planetList)
+            {
+                foreach (var item in spacecraftDictionary)
+                {
+                    if (item.Key == planet)
+                    {
+                        string crafts = "";
+                        foreach (var craft in item.Value)
+                        {
+                            crafts += $"{craft} " ;
+                        }
+                        Console.WriteLine($"{planet}: {crafts}");
+                    }
+                }
             }
 
             Console.ReadKey();
