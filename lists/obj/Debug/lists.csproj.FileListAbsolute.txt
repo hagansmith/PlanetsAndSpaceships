@@ -1,0 +1,7 @@
+C:\Users\adam\workspace\exercises\lists\lists\obj\Debug\lists.csprojResolveAssemblyReference.cache
+C:\Users\adam\workspace\exercises\lists\lists\obj\Debug\lists.csproj.CoreCompileInputs.cache
+C:\Users\adam\workspace\exercises\lists\lists\bin\Debug\lists.exe.config
+C:\Users\adam\workspace\exercises\lists\lists\bin\Debug\lists.exe
+C:\Users\adam\workspace\exercises\lists\lists\bin\Debug\lists.pdb
+C:\Users\adam\workspace\exercises\lists\lists\obj\Debug\lists.exe
+C:\Users\adam\workspace\exercises\lists\lists\obj\Debug\lists.pdb
